@@ -1,5 +1,5 @@
 # bootcamp
 
 ## sub-heading
--- welcome to bootcomp
+- welcome to bootcomp
   - Hi everyone
