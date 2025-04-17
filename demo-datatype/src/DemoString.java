@@ -35,7 +35,7 @@ public class DemoString {
     System.out.println("Joey " + name.charAt(name.length() / 2));
 
     String name2 = "Vincent";
-    System.out.println("Vincent " + name2.charAt((name2.length() - 1) / 2));
+    System.out.println("Vincent " + name2.charAt((name2.length()) / 2));
 
     // Joey -> e
     // Vincent -> c
@@ -47,5 +47,7 @@ public class DemoString {
 
     //System.out.println(name.charAt(name.length() / 2) + 1);
     //System.out.println(name.charAt(name.length() / 2));
+
+    
   }
 }
