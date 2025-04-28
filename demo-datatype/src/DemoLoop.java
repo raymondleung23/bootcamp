@@ -56,5 +56,45 @@ public class DemoLoop {
     }
     System.out.println(index);
 
+    // break
+    // Find the first character of 'a' in a given String, print the index of the character
+    String str = "character";
+    for (int i = 0; i < str.length(); i++) {
+      if (str.charAt(i) == 'a') {
+        System.out.println(i); // 2
+        break; // break the whole loop, exit the loop
+      }
+    }
+
+    // Find the fist 3 character of 'a' in a given String
+    String ss = "abcdeabcdeabcdeabcdeabcde";
+    int counter = 0;
+    for (int i = 0; i < ss.length(); i++) {
+      if (ss.charAt(i) == 'a') { // 0, 1, 2
+        if (counter >= 3) {
+          break;
+        }
+        System.out.println(i);
+        counter ++;
+      }
+    }
+
+    // ! continue + loop
+    // print all index of character 'a' in a given String
+    String ss2 = "abcabcabc";
+    for (int i=0; i< ss2.length(); i++) {
+      if (ss2.charAt(i) == 'a') {
+        System.out.println(i);
+      }
+    }
+
+    for (int i=0; i<ss2.length(); i++) {
+      if (ss2.charAt(i) != 'a') {
+        continue; // skip the rest of the code lines, and then goes to next iteration
+      }
+      System.out.println(i);
+    }
+
+
   }
 }
